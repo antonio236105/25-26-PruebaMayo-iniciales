@@ -1,7 +1,7 @@
 
 services:
   examen:
-    image: xxxxxx/yyyyyyyyyy
+    image: antonio2306/api_antonio_palacios_hernandez02:latest
     ports:
       - 80:8000
     restart: always
