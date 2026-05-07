@@ -1,15 +1,12 @@
-
 name: Docker CI/CD
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'src/**'
+      - '**'
   pull_request:
     branches: [ main ]
-    paths:
-      - 'src/**'
 
 jobs:
   build:
@@ -30,3 +27,4 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/api_antonio_palacios_hernandez:latest
+
