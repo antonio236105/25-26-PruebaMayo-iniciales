@@ -45,7 +45,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         port: 22 # ${{ secrets.PORT }}
         key: ${{ secrets.EC2_KEY }}
-        source: "docker-compose.yml"
+        source: "compose.yml" /nombre del fichero en el repositorio en workflows
         target: /home/admin
     # 2
     - name: script deploy docker services 
